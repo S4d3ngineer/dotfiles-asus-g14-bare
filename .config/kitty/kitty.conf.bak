@@ -1,0 +1,18 @@
+allow_remote_control yes
+
+font_family	JetBrainsMono Nerd Font Mono
+
+window_padding_width 2
+# background_opacity 1.0
+placement_strategy center
+
+# tabs settings
+# tab_bar_style hidden
+# tab_bar_min_tabs 99
+map ctrl+shift+i select_tab
+
+
+# BEGIN_KITTY_THEME
+# Catppuccin-Macchiato
+include current-theme.conf
+# END_KITTY_THEME
