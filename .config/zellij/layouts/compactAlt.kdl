@@ -1,9 +1,9 @@
 layout {
     pane size=1 borderless=true {
         plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-            format_left  "{mode} #[fg=#f5e0dc,bold]{session} {tabs}"
-            format_right "{command_git_branch} {datetime}"
+            format_left  "{mode} {tabs}"
             format_space ""
+            format_right "{command_git_branch} #[fg=#f5e0dc,bold]{session} "
 
             border_enabled  "true"
             border_char     "─"
