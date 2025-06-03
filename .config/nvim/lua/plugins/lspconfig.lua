@@ -1,14 +1,15 @@
 return {
   "neovim/nvim-lspconfig",
+
   opts = {
     -- make sure mason installs the server
     servers = {
-      denols = {
-        filetypes = { "typescript", "typescriptreact" },
-        root_dir = function(...)
-          return vim.fs.root(0, { "deno.json", "deno.jsonc" })
-        end,
-      },
+      -- denols = {
+      --   filetypes = { "typescript", "typescriptreact" },
+      --   root_dir = function(...)
+      --     return vim.fs.root(0, { "deno.json", "deno.jsonc" })
+      --   end,
+      -- },
       vtsls = {
         root_dir = function()
           return not vim.fs.root(0, { "deno.json", "deno.jsonc" })

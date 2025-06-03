@@ -1,5 +1,13 @@
 return {
   {
+    "neanias/everforest-nvim",
+    name = "everforest",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+  },
+
+  {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
@@ -58,9 +66,21 @@ return {
   },
 
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
+    "AlexvZyl/nordic.nvim",
+    name = "nordic",
+    lazy = false,
+    priority = 1000,
   },
+
+  {
+    "frenzyexists/aquarium-vim",
+    name = "aquarium",
+  },
+
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "aquarium",
+  --   },
+  -- },
 }
